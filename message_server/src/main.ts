@@ -1,5 +1,4 @@
 import Bun from "bun";
-import 'dotenv/config';
 
 const clients = new Map<Bun.ServerWebSocket<unknown>, { userId: string | null, rooms: Set<string> }>();
 
