@@ -1,0 +1,17 @@
+{
+  "name": "vesper",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "bun run message_server/ && bun run docker:up",
+    "dev": "bun run message_server/ --watch && bun run docker:up",
+    "docker:up" : "docker compose -f docker-compose.yml up -d",
+    "docker:down": "docker compose -f docker-compose.yml down",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

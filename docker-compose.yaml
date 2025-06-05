@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: vesper
+      POSTGRES_PASSWORD: vesper
+      POSTGRES_DB: vesper_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - vesper_db_data:/var/lib/postgresql/data
+
+volumes:
+  vesper_db_data:
