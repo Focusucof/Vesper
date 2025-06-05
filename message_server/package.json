@@ -7,9 +7,13 @@
     "test": "bun test"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.31.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.2"
   }
 }
