@@ -1,5 +1,5 @@
 {
-  "id": "a7a08bae-5e1c-4ea2-be86-0d14d79360b3",
+  "id": "eb5619f0-12ff-4167-83d7-8a3a69e15539",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -11,9 +11,9 @@
         "id": {
           "name": "id",
           "type": "uuid",
-          "primaryKey": true,
-          "notNull": true,
-          "default": "'440317ad-3084-4928-aef4-f8c67f344540'"
+          "primaryKey": false,
+          "notNull": false,
+          "default": "gen_random_uuid()"
         },
         "room_id": {
           "name": "room_id",
