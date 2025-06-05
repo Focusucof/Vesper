@@ -1,9 +1,9 @@
 import { pgTable, varchar, uuid, timestamp } from "drizzle-orm/pg-core";
-import { randomUUIDv7 } from "bun";
+import { randomUUID } from "crypto";
 
 
 export const messages = pgTable("messages", {
-  id: uuid("id").default(randomUUIDv7()).primaryKey().notNull(),
+  id: uuid("id").default(randomUUID()).primaryKey().notNull(),
   roomId: varchar("room_id", { length: 255 }).notNull(),
   serverId: uuid("server_id").notNull(),
   userId: uuid("user_id").notNull(),
