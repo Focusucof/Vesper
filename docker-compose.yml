@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_USER: vesper
       POSTGRES_PASSWORD: vesper
-      POSTGRES_DB: vesper_db
+      POSTGRES_DB: vesper
     ports:
       - "5432:5432"
     volumes:
