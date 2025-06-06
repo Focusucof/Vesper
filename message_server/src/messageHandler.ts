@@ -1,8 +1,7 @@
-import { time } from "drizzle-orm/mysql-core";
 import { db } from "./db/drizzle";
 import { messages, type Message, type NewMessage } from "./db/schema";
 import { clients } from "./main";
-import { type MessageType, type InitMessage, type JoinMessage, type MessageContent } from "./types/messages";
+import { type InitMessage, type JoinMessage, type MessageContent } from "./types/messages";
 
 export async function saveMessage(msg: MessageContent, userId: string): Promise<Message | undefined> {
     const message: NewMessage = {
