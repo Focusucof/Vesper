@@ -1,0 +1,18 @@
+Test websocket messages
+TODO: automate this in a script
+
+{
+	"type": "init",
+	"userId": "test1"
+}
+
+{
+	"type": "message",
+	"room": "test",
+	"content": "Hello World"
+}
+
+{
+    "type": "join",
+    "room": "test"
+}
