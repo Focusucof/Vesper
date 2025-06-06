@@ -13,7 +13,7 @@ const server = Bun.serve({
             clients.set(ws, { userId: null, rooms: new Set() });
             console.log("New client connected");
         },
-        async message(ws, data) {
+        message(ws, data) {
             handleMessage(ws, data, server);
         },
         close(ws) {
